@@ -1,0 +1,193 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.65\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "9566d31f865907b18e25",
+      "config": "{}",
+      "name": "ed76a4c6427bed740ebb"
+    }
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"187L\"}}}}}]}}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "9566d31f865907b18e25",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"26cb2d4ecb000956be3b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":96,\"z\":0,\"width\":208,\"height\":144,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CampaignData.Total Impressions\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CampaignData\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Total Impressions\"},\"Name\":\"CampaignData.Total Impressions\",\"NativeReferenceName\":\"Total Impressions\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Total Impressions\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":6,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 144.00,
+          "width": 208.00,
+          "x": 0.00,
+          "y": 96.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"4942fb276091b1b2119d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":704,\"y\":288,\"z\":9000,\"width\":272,\"height\":192,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"CampaignData.xyz_campaign_id\",\"active\":true}],\"Y\":[{\"queryRef\":\"CampaignData.Average ROI\"}],\"Tooltips\":[{\"queryRef\":\"CampaignData.Approved Conversions\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CampaignData\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"xyz_campaign_id\"},\"Name\":\"CampaignData.xyz_campaign_id\",\"NativeReferenceName\":\"xyz_campaign_id\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Average ROI\"},\"Name\":\"CampaignData.Average ROI\",\"NativeReferenceName\":\"Average ROI\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Approved Conversions\"},\"Name\":\"CampaignData.Approved Conversions\",\"NativeReferenceName\":\"Approved Conversions\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Average ROI\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 192.00,
+          "width": 272.00,
+          "x": 704.00,
+          "y": 288.00,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"5750ee6baea780c9ce57\",\"layouts\":[{\"id\":0,\"position\":{\"x\":432,\"y\":96,\"z\":6000,\"width\":240,\"height\":176,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"CampaignData.age\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(CampaignData.interest)\"},{\"queryRef\":\"CampaignData.Approved Conversions\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CampaignData\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"age\"},\"Name\":\"CampaignData.age\",\"NativeReferenceName\":\"age\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"interest\"}},\"Function\":0},\"Name\":\"Sum(CampaignData.interest)\",\"NativeReferenceName\":\"Sum of interest\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Approved Conversions\"},\"Name\":\"CampaignData.Approved Conversions\",\"NativeReferenceName\":\"Approved Conversions\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"interest\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 176.00,
+          "width": 240.00,
+          "x": 432.00,
+          "y": 96.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"5f15d446b36da03a9c5a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":528,\"z\":3000,\"width\":208,\"height\":144,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CampaignData.CTR (%)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CampaignData\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CTR (%)\"},\"Name\":\"CampaignData.CTR (%)\",\"NativeReferenceName\":\"CTR (%)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CTR (%)\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 144.00,
+          "width": 208.00,
+          "x": 0.00,
+          "y": 528.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"63ad55d9a26975c01c96\",\"layouts\":[{\"id\":0,\"position\":{\"x\":208,\"y\":384,\"z\":14000,\"width\":208,\"height\":144,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CampaignData.Approved Conversions\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CampaignData\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Approved Conversions\"},\"Name\":\"CampaignData.Approved Conversions\",\"NativeReferenceName\":\"Approved Conversions\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Approved Conversions\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#03E5F5'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 144.00,
+          "width": 208.00,
+          "x": 208.00,
+          "y": 384.00,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"6f6a7065b38658e511a5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":432,\"y\":496,\"z\":8000,\"width\":256,\"height\":176,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"CampaignData.ad_id\"},{\"queryRef\":\"CampaignData.fb_campaign_id\"},{\"queryRef\":\"CampaignData.xyz_campaign_id\"},{\"queryRef\":\"CampaignData.Approved Conversions\"},{\"queryRef\":\"CampaignData.CTR (%)\"},{\"queryRef\":\"CampaignData.age\"},{\"queryRef\":\"CampaignData.CPC\"},{\"queryRef\":\"CampaignData.gender\"},{\"queryRef\":\"CampaignData.ROI (%)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CampaignData\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ad_id\"},\"Name\":\"CampaignData.ad_id\",\"NativeReferenceName\":\"ad_id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"fb_campaign_id\"},\"Name\":\"CampaignData.fb_campaign_id\",\"NativeReferenceName\":\"fb_campaign_id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"xyz_campaign_id\"},\"Name\":\"CampaignData.xyz_campaign_id\",\"NativeReferenceName\":\"xyz_campaign_id\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Approved Conversions\"},\"Name\":\"CampaignData.Approved Conversions\",\"NativeReferenceName\":\"Approved Conversions\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CTR (%)\"},\"Name\":\"CampaignData.CTR (%)\",\"NativeReferenceName\":\"CTR (%)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"age\"},\"Name\":\"CampaignData.age\",\"NativeReferenceName\":\"age\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CPC\"},\"Name\":\"CampaignData.CPC\",\"NativeReferenceName\":\"CPC\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"gender\"},\"Name\":\"CampaignData.gender\",\"NativeReferenceName\":\"gender\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ROI (%)\"},\"Name\":\"CampaignData.ROI (%)\",\"NativeReferenceName\":\"ROI (%)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ROI (%)\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"values\":[{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CampaignData\"}},\"Property\":\"ROI (%)\"}},\"FillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#E60909'\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#0ED862'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"CampaignData.ROI (%)\"}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"93.4D\"}}}},\"selector\":{\"metadata\":\"CampaignData.fb_campaign_id\"}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0.6}}}}}}}]}}}",
+          "filters": "[{\"name\":\"3670ff2170e76a20d152\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CampaignData\"}},\"Property\":\"ad_id\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CampaignData\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ad_id\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ROI (%)\"}}}],\"Top\":10}}},\"Type\":2},{\"Name\":\"c\",\"Entity\":\"CampaignData\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ad_id\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false,\"isLockedInViewMode\":false}]",
+          "height": 176.00,
+          "width": 256.00,
+          "x": 432.00,
+          "y": 496.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"7523c873723b453c76d4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":208,\"y\":528,\"z\":4000,\"width\":208,\"height\":144,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CampaignData.Engagement Rate (%)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CampaignData\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Engagement Rate (%)\"},\"Name\":\"CampaignData.Engagement Rate (%)\",\"NativeReferenceName\":\"Engagement Rate (%)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Engagement Rate (%)\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 144.00,
+          "width": 208.00,
+          "x": 208.00,
+          "y": 528.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"7ed33c29c5603a810080\",\"layouts\":[{\"id\":0,\"position\":{\"x\":208,\"y\":240,\"z\":5000,\"width\":208,\"height\":144,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CampaignData.ROI (%)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CampaignData\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ROI (%)\"},\"Name\":\"CampaignData.ROI (%)\",\"NativeReferenceName\":\"ROI (%)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ROI (%)\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#EB0D1E'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 144.00,
+          "width": 208.00,
+          "x": 208.00,
+          "y": 240.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"7fd36a1f06ae07a09767\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":240,\"z\":1000,\"width\":208,\"height\":144,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CampaignData.Total Clicks\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CampaignData\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Total Clicks\"},\"Name\":\"CampaignData.Total Clicks\",\"NativeReferenceName\":\"Total Clicks\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Total Clicks\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 144.00,
+          "width": 208.00,
+          "x": 0.00,
+          "y": 240.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"a72ab319a0967970401d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":320,\"y\":0,\"z\":12000,\"width\":832,\"height\":64,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Future Interns | Ad Campaign Performance Dashboard\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"20pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 64.00,
+          "width": 832.00,
+          "x": 320.00,
+          "y": 0.00,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"b05ebbab834808b2c025\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":384,\"z\":13000,\"width\":208,\"height\":144,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CampaignData.Cost Per Click\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CampaignData\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Cost Per Click\"},\"Name\":\"CampaignData.Cost Per Click\",\"NativeReferenceName\":\"Cost Per Click\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Cost Per Click\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 144.00,
+          "width": 208.00,
+          "x": 0.00,
+          "y": 384.00,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"cb1adbcd23ba7ab03140\",\"layouts\":[{\"id\":0,\"position\":{\"x\":704,\"y\":496,\"z\":11000,\"width\":128,\"height\":176,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"CampaignData.age\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CampaignData\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"age\"},\"Name\":\"CampaignData.age\",\"NativeReferenceName\":\"age\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"header\":[{\"properties\":{\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Filter by age'\"}}}}}],\"items\":[{\"properties\":{\"outlineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}],\"general\":[{\"properties\":{}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 176.00,
+          "width": 128.00,
+          "x": 704.00,
+          "y": 496.00,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"cccce920bc9e5bbe0074\",\"layouts\":[{\"id\":0,\"position\":{\"x\":432,\"y\":288,\"z\":10000,\"width\":256,\"height\":192,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"CampaignData.fb_campaign_id\",\"active\":true}],\"Y\":[{\"queryRef\":\"CampaignData.Average ROI\"}],\"Tooltips\":[{\"queryRef\":\"CampaignData.Approved Conversions\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CampaignData\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"fb_campaign_id\"},\"Name\":\"CampaignData.fb_campaign_id\",\"NativeReferenceName\":\"fb_campaign_id\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Average ROI\"},\"Name\":\"CampaignData.Average ROI\",\"NativeReferenceName\":\"Average ROI\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Approved Conversions\"},\"Name\":\"CampaignData.Approved Conversions\",\"NativeReferenceName\":\"Approved Conversions\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Average ROI\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 192.00,
+          "width": 256.00,
+          "x": 432.00,
+          "y": 288.00,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"d32554b10055921a60b3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":208,\"y\":96,\"z\":2000,\"width\":208,\"height\":144,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"CampaignData.Total Spent\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CampaignData\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Total Spent\"},\"Name\":\"CampaignData.Total Spent\",\"NativeReferenceName\":\"Total Spent\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Total Spent\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.4}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 144.00,
+          "width": 208.00,
+          "x": 208.00,
+          "y": 96.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"e58211a70b0aa10bd96b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":848,\"y\":496,\"z\":15000,\"width\":128,\"height\":176,\"tabOrder\":15000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"CampaignData.interest\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CampaignData\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"interest\"},\"Name\":\"CampaignData.interest\",\"NativeReferenceName\":\"interest\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{}}],\"numericInputStyle\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 176.00,
+          "width": 128.00,
+          "x": 848.00,
+          "y": 496.00,
+          "z": 15000.00
+        },
+        {
+          "config": "{\"name\":\"e6418747365852ffcce3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":992,\"y\":96,\"z\":16000,\"width\":288,\"height\":576,\"tabOrder\":16000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"ACTIONABLE RECOMMENDATIONS\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\"}}]},{\"textRuns\":[{\"value\":\"Target High-Performing Demographics\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\",\"color\":\"#000000\"}},{\"value\":\":\",\"textStyle\":{\"fontSize\":\"12pt\",\"color\":\"#000000\"}}]},{\"textRuns\":[{\"value\":\"Insight\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\"}},{\"value\":\": Females aged 30-34, 35-39, and 45-49 with interests 16, 27, and 29 drive high clicks and conversions.\",\"textStyle\":{\"fontSize\":\"12pt\"}}],\"listType\":\"bullet\"},{\"textRuns\":[{\"value\":\"Action\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\"}},{\"value\":\": Increase budget for these segments. Create tailored ads, for example, family-oriented for interest 27.\",\"textStyle\":{\"fontSize\":\"12pt\"}}],\"listType\":\"bullet\"},{\"textRuns\":[{\"value\":\"Implementation\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\"}},{\"value\":\": Test video ads to boost engagement.\",\"textStyle\":{\"fontSize\":\"12pt\"}}],\"listType\":\"bullet\"},{\"textRuns\":[{\"value\":\"Monitoring\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\"}},{\"value\":\": Aim for 0.5% CTR increase in 6 weeks.\",\"textStyle\":{\"fontSize\":\"12pt\"}}],\"listType\":\"bullet\"},{\"textRuns\":[{\"value\":\"Pause Underperforming Campaigns\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\",\"color\":\"#000000\"}},{\"value\":\":\",\"textStyle\":{\"fontSize\":\"12pt\",\"color\":\"#000000\"}}]},{\"textRuns\":[{\"value\":\"Insight\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\"}},{\"value\":\": xyz_campaign_id 916 and 936 have high spend but low conversions, while xyz_campaign_id 1178 performs strongly.\",\"textStyle\":{\"fontSize\":\"12pt\"}}],\"listType\":\"bullet\"},{\"textRuns\":[{\"value\":\"Action\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\"}},{\"value\":\": Pause campaigns with spend-to-conversion ratios above $10. Redirect more of the budget to xyz_campaign_id 1178.\",\"textStyle\":{\"fontSize\":\"12pt\"}}],\"listType\":\"bullet\"},{\"textRuns\":[{\"value\":\"Implementation\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\"}},{\"value\":\":\",\"textStyle\":{\"fontSize\":\"12pt\"}}],\"listType\":\"bullet\"},{\"textRuns\":[{\"value\":\"Identify low-ROI campaigns using the ROI table.\",\"textStyle\":{\"fontSize\":\"12pt\"}}],\"listType\":\"bullet\",\"indent\":1},{\"textRuns\":[{\"value\":\"Reallocate budget to top ad IDs in xyz_campaign_id 1178.\",\"textStyle\":{\"fontSize\":\"12pt\"}}],\"listType\":\"bullet\",\"indent\":1},{\"textRuns\":[{\"value\":\"Pause for 2 weeks, then resume with optimized targeting if viable.\",\"textStyle\":{\"fontSize\":\"12pt\"}}],\"listType\":\"bullet\",\"indent\":1},{\"textRuns\":[{\"value\":\"Monitoring\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\"}},{\"value\":\": Track ROI and Approved Conversions and ensure 10% ROI increase in 4 weeks.\",\"textStyle\":{\"fontSize\":\"12pt\"}}],\"listType\":\"bullet\"},{\"textRuns\":[{\"value\":\"Improve Low-CTR Segments\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\",\"color\":\"#000000\"}},{\"value\":\":\",\"textStyle\":{\"fontSize\":\"12pt\",\"color\":\"#000000\"}}]},{\"textRuns\":[{\"value\":\"Insight\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\"}},{\"value\":\": Males aged 30-34 with interests 2, 7, and 64 show low CTR.\",\"textStyle\":{\"fontSize\":\"12pt\"}}],\"listType\":\"bullet\"},{\"textRuns\":[{\"value\":\"Action\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\"}},{\"value\":\": Reduce budget until CTR improves.\",\"textStyle\":{\"fontSize\":\"12pt\"}}],\"listType\":\"bullet\"},{\"textRuns\":[{\"value\":\"Implementation\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\"}},{\"value\":\":\",\"textStyle\":{\"fontSize\":\"12pt\"}}],\"listType\":\"bullet\"},{\"textRuns\":[{\"value\":\"Narrow target the specific behaviors within these interests.\",\"textStyle\":{\"fontSize\":\"12pt\"}}],\"listType\":\"bullet\",\"indent\":1},{\"textRuns\":[{\"value\":\"Pause ads with CTR below 0.1% after 2 weeks.\",\"textStyle\":{\"fontSize\":\"12pt\"}}],\"listType\":\"bullet\",\"indent\":1},{\"textRuns\":[{\"value\":\"Monitoring\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\"}},{\"value\":\": Use CTR card to track weekly improvements. Target 0.5% CTR within 8 weeks.\",\"textStyle\":{\"fontSize\":\"12pt\"}}],\"listType\":\"bullet\"},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"\"}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 576.00,
+          "width": 288.00,
+          "x": 992.00,
+          "y": 96.00,
+          "z": 16000.00
+        },
+        {
+          "config": "{\"name\":\"e962c28d36b17e090217\",\"layouts\":[{\"id\":0,\"position\":{\"x\":688,\"y\":96,\"z\":7000,\"width\":288,\"height\":176,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"funnel\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(CampaignData.Impressions)\"},{\"queryRef\":\"Sum(CampaignData.Clicks)\"},{\"queryRef\":\"Sum(CampaignData.Approved_Conversion)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CampaignData\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Impressions\"}},\"Function\":0},\"Name\":\"Sum(CampaignData.Impressions)\",\"NativeReferenceName\":\"Sum of Impressions\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Clicks\"}},\"Function\":0},\"Name\":\"Sum(CampaignData.Clicks)\",\"NativeReferenceName\":\"Sum of Clicks\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Approved_Conversion\"}},\"Function\":0},\"Name\":\"Sum(CampaignData.Approved_Conversion)\",\"NativeReferenceName\":\"Sum of Approved_Conversion\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Impressions\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 176.00,
+          "width": 288.00,
+          "x": 688.00,
+          "y": 96.00,
+          "z": 7000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
